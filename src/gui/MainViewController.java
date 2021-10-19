@@ -30,7 +30,7 @@ public class MainViewController implements Initializable {
 	}
 
 	public void onMenuItemDepartmentAction() {
-		System.out.println("Department");
+		loadView("/gui/DepartmentList.fxml");
 	}
 
 	public void onMenuItemAboutAction() {
@@ -50,9 +50,9 @@ public class MainViewController implements Initializable {
 			
 			VBox mainVBox = (VBox) ((ScrollPane) mainScene.getRoot()).getContent();
 			
-			// MenuBar mainMenu = (MenuBar) mainVBox.getChildren().get(0);
-			// mainVBox.getChildren().clear();
-			// mainVBox.getChildren().add(mainMenu);
+			MenuBar mainMenu = (MenuBar) mainVBox.getChildren().get(0);
+			mainVBox.getChildren().clear();
+			mainVBox.getChildren().add(mainMenu);
 			
 			mainVBox.getChildren().addAll(newVBox.getChildren());
 		} catch (IOException e) {
