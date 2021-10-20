@@ -10,26 +10,33 @@
 <?import javafx.scene.text.Font?>
 
 
-<VBox prefHeight="348.0" prefWidth="353.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
-   <children>
-      <Label alignment="TOP_LEFT" prefHeight="0.0" prefWidth="240.0" text="Department Registration">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-         <padding>
-            <Insets left="5.0" top="5.0" />
-         </padding>
-      </Label>
-      <ToolBar prefHeight="40.0" prefWidth="200.0">
-        <items>
-          <Button mnemonicParsing="false" text="New" />
-        </items>
-      </ToolBar>
-      <TableView prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Id" />
-          <TableColumn prefWidth="75.0" text="Name" />
-        </columns>
-      </TableView>
-   </children>
+<VBox prefHeight="348.0" prefWidth="353.0"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17"
+	fx:controller="gui.DepartmentListController">
+	<children>
+		<Label alignment="TOP_LEFT" prefHeight="0.0" prefWidth="240.0"
+			text="Department Registration">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+			<padding>
+				<Insets left="5.0" top="5.0" />
+			</padding>
+		</Label>
+		<ToolBar prefHeight="40.0" prefWidth="200.0">
+			<items>
+				<Button mnemonicParsing="false" text="New" fx:id="buttonNew"
+					onAction="#onButtonNewAction" />
+			</items>
+		</ToolBar>
+		<TableView prefHeight="200.0" prefWidth="200.0"
+			fx:id="tableViewDepartment">
+			<columns>
+				<TableColumn prefWidth="75.0" text="Id"
+					fx:id="tableColumnId" />
+				<TableColumn prefWidth="75.0" text="Name"
+					fx:id="tableColumnName" />
+			</columns>
+		</TableView>
+	</children>
 </VBox>
