@@ -8,7 +8,6 @@ import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.MenuBar;
@@ -24,7 +23,7 @@ public class MainViewController implements Initializable {
 	private MenuItem menuItemDepartment;
 	@FXML
 	private MenuItem menuItemAbout;
-
+	
 	public void onMenuItemSellerAction() {
 		System.out.println("Seller");
 	}
