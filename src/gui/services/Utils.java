@@ -1,4 +1,4 @@
-package servicesgui;
+package gui.services;
 
 import javafx.event.ActionEvent;
 import javafx.scene.Node;

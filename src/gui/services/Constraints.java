@@ -1,4 +1,4 @@
-package servicesgui;
+package gui.services;
 
 import javafx.scene.control.TextField;
 
